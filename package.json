@@ -1,0 +1,35 @@
+{
+  "name": "koa-simple-json2csv",
+  "version": "1.0.0",
+  "description": "A simple json to csv module to support koa.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --harmony --require co-mocha test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/solee0524/koa-simple-json2csv.git"
+  },
+  "keywords": [
+    "koa",
+    "json",
+    "csv",
+    "json2csv",
+    "simple",
+    "jsontocsv"
+  ],
+  "author": "solee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/solee0524/koa-simple-json2csv/issues"
+  },
+  "homepage": "https://github.com/solee0524/koa-simple-json2csv#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "co-mocha": "^1.1.2",
+    "mocha": "^2.4.5"
+  },
+  "dependencies": {
+    "co-foreach": "^1.1.1"
+  }
+}
