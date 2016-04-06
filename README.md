@@ -1,7 +1,7 @@
 # koa-simple-json2csv
 A simple json to csv module to support koa.
 
-<p align="center">
+<p align="left">
   <a href="https://npmjs.org/package/koa-simple-json2csv">
     <img src="https://img.shields.io/npm/v/koa-simple-json2csv.svg?style=flat-square"
          alt="NPM Version">
