@@ -38,7 +38,7 @@ describe('json to csv test', function () {
     var csv = yield json2csv(options);
     csv.should.be.a('string');
     csv.should.to.have.string('solee,http://solee.me,https://github.com/solee0524/koa-simple-json2csv.git,"coo""l,lol"\n');
-    console.log(csv);
+    //console.log(csv);
   });
 
   it('should return "Need Fields!" ', function *() {
