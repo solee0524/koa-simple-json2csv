@@ -26,8 +26,8 @@ module.exports = function *(options) {
       var tmpField = field.split('.');
       var tmpValue = '';
       if (tmpField.length === 1) {
-        tmpValue = item[tmpField] || '';
-      } else if (tmpField.length > 1) {
+        tmpValue = item[field] || '';
+      } else {
         tmpValue = item;
         var n = 0;
         while (n < tmpField.length) {

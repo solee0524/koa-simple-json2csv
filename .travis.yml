@@ -4,3 +4,5 @@ node_js:
   - v4
   - '0.12'
 script: npm run coverage
+after_success:
+  - coveralls
