@@ -73,10 +73,10 @@ describe('json to csv test with incorrect input', function () {
   it('wrong field name', function *() {
     var options = {
       data: authors,
-      fields: ['wrongname', 'homepage', 'repo.sth.url', 'keys']
+      fields: ['wrongname', 'homepages', 'repo.sth.url', 'key']
     };
     var csv = yield json2csv(options);
-    console.log(csv);
+    csv.should.to.have.string(',,,\n');
   });
 
 });
