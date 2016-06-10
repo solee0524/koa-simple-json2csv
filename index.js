@@ -26,12 +26,12 @@ module.exports = function *(options) {
       var tmpField = field.split('.');
       var tmpValue = '';
       if (tmpField.length === 1) {
-        tmpValue = item[field] || '';
+        tmpValue = item[field] === undefined || item[field] === null ? '' : item[field];
       } else {
         tmpValue = item;
         var n = 0;
         while (n < tmpField.length) {
-          tmpValue = tmpValue[tmpField[n]] || '';
+          tmpValue = tmpValue[tmpField[n]] === undefined || tmpValue[tmpField[n]] === null ? '' : tmpValue[tmpField[n]];
           if (!tmpValue) {
             break;
           }

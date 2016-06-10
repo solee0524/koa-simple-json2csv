@@ -78,5 +78,46 @@ describe('json to csv test with incorrect input', function () {
     var csv = yield json2csv(options);
     csv.should.to.have.string(',,,\n');
   });
+});
+
+describe('validate boolean inpunt', function () {
+  it('mix boolean value', function * () {
+    var data = [{
+      hello: true,
+      world: false
+    }];
+    var options = {
+      data: data,
+      fields: ['hello', 'world']
+    };
+    var csv = yield json2csv(options);
+    csv.should.to.have.string('true,false');
+  });
+
+  it('all true boolean value', function * () {
+    var data = [{
+      hello: true,
+      world: true
+    }];
+    var options = {
+      data: data,
+      fields: ['hello', 'world']
+    };
+    var csv = yield json2csv(options);
+    csv.should.to.have.string('true,true');
+  });
+
+  it('all false boolean value', function * () {
+    var data = [{
+      hello: false,
+      world: false
+    }];
+    var options = {
+      data: data,
+      fields: ['hello', 'world']
+    };
+    var csv = yield json2csv(options);
+    csv.should.to.have.string('false,false');
+  });
 
 });
