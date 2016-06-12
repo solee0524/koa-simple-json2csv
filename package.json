@@ -1,6 +1,6 @@
 {
   "name": "koa-simple-json2csv",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple json to csv module to support koa.",
   "main": "index.js",
   "scripts": {
